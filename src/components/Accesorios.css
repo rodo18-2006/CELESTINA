@@ -1,0 +1,16 @@
+.accesorios {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.accesorios h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
