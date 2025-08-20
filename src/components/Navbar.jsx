@@ -5,9 +5,11 @@ import "./Navbar.css";
 function Navbar({ onCartClick, cartCount }) {
   return (
     <nav className="navbar">
-      <Link to="/" className="logo">
-        CELESTINA
+      <Link to="/" className="logo-container">
+        <img src="./img/cele.png" className="logoo" alt="Logo" />
+        <span className="logo-text">CELESTINA</span>
       </Link>
+
       <ul className="nav-links">
         <li>
           <Link to="/">Inicio</Link>
@@ -15,7 +17,6 @@ function Navbar({ onCartClick, cartCount }) {
         <li>
           <Link to="/accesorios">Accesorios</Link>
         </li>
-
         <li>
           <Link to="/productos">Productos</Link>
         </li>

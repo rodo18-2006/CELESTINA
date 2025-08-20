@@ -1,48 +1,59 @@
+/* Importar la fuente */
+@import url('https://fonts.googleapis.com/css2?family=Glacial+Indifference:wght@400;700&display=swap');
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  border-bottom: 2px solid black;
-  background: white;
+  padding: 15px 30px;
+  background-color: white;
+  font-family: 'Glacial Indifference', sans-serif;
 }
 
-.logo {
+.logo-container {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 10px; /* espacio entre imagen y texto */
+}
+
+.logoo {
+  width: 50px; /* ajusta según necesites */
+  height: auto;
+}
+
+.logo-text {
   font-size: 1.8rem;
-  font-weight: bold;
-  color: black;
+  font-weight: 700;
+  color: #000;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
   gap: 20px;
-  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
-.nav-links a {
+.nav-links li a {
   text-decoration: none;
-  color: black;
+  color: #000;
   font-weight: 500;
 }
 
-.nav-links a:hover {
-  border-bottom: 2px solid black;
+.nav-links li a:hover {
+  color: #555;
 }
 
-/* 🔹 Estilo del botón del carrito */
 .cart-btn {
-  background-color: black;
-  color: white;
+  background-color: transparent;
   border: none;
-  padding: 8px 15px;
-  font-size: 1rem;
   cursor: pointer;
-  border-radius: 5px;
-  transition: all 0.3s ease;
+  font-size: 1rem;
+  font-family: 'Glacial Indifference', sans-serif;
 }
 
 .cart-btn:hover {
-  background-color: #333;
-  color: #fff;
+  color: #555;
 }
